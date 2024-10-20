@@ -3,7 +3,7 @@ import { Provider } from "react-redux"
 
 import GlobalStyles from "styles/GlobalStyles"
 import { store } from "store/store"
-import Homework_15 from "homeworks/Homework_15/Homework_15"
+
 
 import App from "./App"
 
@@ -15,7 +15,6 @@ if (container) {
   root.render(
     <Provider store={store}>
       <GlobalStyles/>
-      <Homework_15/>
       <App />
     </Provider>,
   )

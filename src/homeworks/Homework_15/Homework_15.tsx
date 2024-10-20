@@ -9,11 +9,11 @@ import { PageWrapper, ButtonControl, InputComponent } from "./styles"
 function Homework_15() {
   const [count, setCount] = useState<number>(0)
 
-  const handleMinus = (): void => {
+  const onMinus = (): void => {
     setCount((prevValue: number) => prevValue - 1)
   }
 
-  const handlePlus = (): void => {
+  const onPlus = (): void => {
     setCount((prevValue: number) => prevValue + 1)
   }
   return (
@@ -26,7 +26,7 @@ function Homework_15() {
           name="email"
         />
       </InputComponent>
-      <Counter count={count} onMinus={handleMinus} onPlus={handlePlus} />
+      <Counter count={count} onMinus={onMinus} onPlus={onPlus} />
       <ButtonControl>
         <Button type="submit" name="Create" />
       </ButtonControl>
