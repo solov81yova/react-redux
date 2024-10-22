@@ -34,7 +34,7 @@ function Homework_16() {
   }
   
   const resetResults = () => {
-    dispatch(feedbackSliceActions.resetResult(0))
+    dispatch(feedbackSliceActions.resetResult())
   }
   return (
     <PageWrapper>
