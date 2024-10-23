@@ -77,7 +77,6 @@ function Homework_17() {
         {data.length > 0 && (
           <RandomJokeContainer>{randomJokes}</RandomJokeContainer>
         )}
-        {error && <RandomJokeContainer>{error}</RandomJokeContainer>}
       </RandomJokeCard>
       <ButtonControl>
         <Button
