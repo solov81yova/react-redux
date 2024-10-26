@@ -10,6 +10,7 @@ export enum APP_ROUTES {
   NOT_FOUND = "*",
 }
 export enum EMPLOYEE_APP_ROUTES {
+  HOME = "/",
   CREATE_EMPLOYEE = "/createEmployee",
   EMPLOYEES = "/employees",
 }

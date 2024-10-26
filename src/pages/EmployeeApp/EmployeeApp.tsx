@@ -10,6 +10,7 @@ function EmployeeApp() {
   return (
     <EmployeeLayout>
       <Routes>
+        <Route path={EMPLOYEE_APP_ROUTES.HOME} element={<EmployeeForm />} />
         <Route
           path={EMPLOYEE_APP_ROUTES.CREATE_EMPLOYEE}
           element={<EmployeeForm />}

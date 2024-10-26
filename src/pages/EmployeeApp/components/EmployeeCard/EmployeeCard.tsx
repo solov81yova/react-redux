@@ -1,7 +1,10 @@
 import { useEffect } from "react"
 
 import { useAppDispatch, useAppSelector } from "store/hooks"
-import { employeeSliceAction, employeeSliceSelectors } from "store/redux/employeeApp/employeeAppSlice"
+import {
+  employeeSliceAction,
+  employeeSliceSelectors,
+} from "store/redux/employeeApp/employeeSlice"
 import { UserData } from "pages/EmployeeApp/types"
 import Button from "components/Button/Button"
 
@@ -18,9 +21,7 @@ import {
 function EmployeeCard() {
   const dispatch = useAppDispatch()
 
-  const { userData, error } = useAppSelector(
-    employeeSliceSelectors.employees,
-  )
+  const { userData, error } = useAppSelector(employeeSliceSelectors.employees)
 
   const deleteAllUsers = () => {
     dispatch(employeeSliceAction.deleteAllUsers())
@@ -64,9 +65,7 @@ function EmployeeCard() {
     <PageWrapper>
       {userData.length > 0 ? (
         <>
-          <CardContainer>
-            {userCards}
-          </CardContainer>
+          <CardContainer>{userCards}</CardContainer>
           <ButtonControl>
             <Button
               name="Remove All Employees"

@@ -7,7 +7,7 @@ import { EMPLOYEE_APP_ROUTES } from "constants/routes"
 import Input from "components/Input/Input"
 import Button from "components/Button/Button"
 import { useAppDispatch } from "store/hooks"
-import { employeeSliceAction } from "store/redux/employeeApp/employeeAppSlice"
+import { employeeSliceAction } from "store/redux/employeeApp/employeeSlice"
 
 import { EmployeeFormContainer, InputsContainer } from "./styles"
 import { EMPLOYEE_FORM_NAMES } from "./types"
